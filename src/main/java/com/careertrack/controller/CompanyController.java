@@ -24,6 +24,7 @@ public class CompanyController {
 
     @GetMapping("/api/companies")
     public List<Company> getAllCompanies() {
+
         return companyService.getAllCompanies();
     }
 }
