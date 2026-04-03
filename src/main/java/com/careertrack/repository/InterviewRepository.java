@@ -10,4 +10,6 @@ import java.util.List;
 public interface InterviewRepository extends JpaRepository<Interview, Long> {
 
     List<Interview> findByScheduledAtAfter(LocalDateTime time);
+
+    long countByApplication_User_Email(String email);
 }

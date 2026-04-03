@@ -9,4 +9,8 @@ import java.util.List;
 @Repository
 public interface ApplicationRepository extends JpaRepository<Application,Long> {
     List<Application> findByUser(User user);
+
+    long countByUser(User user);
+
+    long countByUserAndStatus(User user, String status);
 }
